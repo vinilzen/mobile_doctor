@@ -1,0 +1,12 @@
+.doc-ico {
+  background-image: url(../img/icos_sm.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
+.ico-map {
+  width: 100%;
+  background-color: #d5eedb;
+}

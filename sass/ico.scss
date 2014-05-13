@@ -1,0 +1,132 @@
+.ico-menu, .ico-settings {
+	float: left;
+	padding: $navbar-padding-vertical $navbar-padding-horizontal*2+1;
+	font-size: $font-size-large;
+	line-height: $line-height-computed;
+	height: $navbar-height;
+	i {
+		width: 14px;
+		height: 14px;
+		display: block;
+		margin-top: 2px;
+	}
+}
+.ico-menu {
+	i {
+		background-position:  left -1px;
+	}
+}
+.ico-settings {
+	i {
+		background-position:  -21px -1px;
+		height: 16px;
+		width: 16px;
+		margin-top: 1px;
+	}
+	float: right;
+}
+
+.ico-menu i.back-ico {
+	background-position: -74px -26px;
+}
+
+.ico-circl {
+	font-size: 13px; 
+	color: #2a6496;
+	text-decoration: underline;
+	width: 100%;
+	text-align: center;
+	display: block;
+	span {
+		border-radius: 50%;
+		margin: 0 auto;
+		width: 51px;
+		height: 51px;
+		border:1px solid $doc_green;
+		display: block;
+		clear: both;
+		i {
+			width: 18px;
+			height: 18px;
+			margin-top: 18px;
+			margin-left: 18px;
+			display: block;
+		}
+	}
+}
+.ico-circl.ico-desktop i {
+	background-position: -49px -25px;
+}
+.ico-circl.ico-call i {
+	background-position: -25px -25px;
+}
+
+.doc-ico {
+	background-image: url(../img/icos_sm.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+
+	&.ico-clinic {
+		background-position:  0px -23px;
+		height: 20px;
+		top: 2px;
+		position: relative;
+		margin-right: 5px;
+	}
+	&.ico-about {
+		background-position: -63px 0px;
+		height: 20px;
+		top: 5px;
+		position: relative;
+		margin-right: 5px;
+	}
+	&.ico-education {
+		background-position: -84px 0px;
+		height: 20px;
+		top: 5px;
+		position: relative;
+		margin-right: 5px;
+	}
+	&.ico-sert {
+		background-position: -109px 0px;
+		height: 20px;
+		top: 5px;
+		position: relative;
+		margin-right: 5px;
+	}
+
+	&.ico-addr {
+		background-position: -42px 0;
+		width: 14px;
+		position: absolute;
+		top:0px;
+		left:0;
+	}
+	&.ico-metro {
+		background-position: -115px -23px;
+		width: 14px;
+		position: absolute;
+		top:0px;
+		left:0;
+	}
+	&.ico-arrow-right {
+		background-position: -97px -25px;
+		width: 14px;
+	}
+	&.ico-calendar {
+		background-position: -130px 5px;
+		width: 21px;
+		height: 21px;
+	}
+}
+
+		.ico-search {
+			position: absolute;
+			left: 20px;
+			top: 9px;
+			width: 17px;
+			height: 19px;
+			background-position: -137px -23px;
+		}

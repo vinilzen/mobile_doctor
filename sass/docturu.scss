@@ -1,0 +1,272 @@
+html, body {
+	height: 100%;
+}
+.container-main {
+	padding: 20px 15px;
+	height: 100%;
+	min-height: 438px;
+	position: relative;
+}
+.navbar-brand {
+	font-weight: 600;
+	text-align: center;
+	width: calc(100% - 92px);
+	&.doc-title {
+		white-space: nowrap;
+		width: calc(100% - 70px);
+		text-align: left;
+		padding-left: 0;
+	}
+}
+.btn-centr.btn-group {
+	margin: 0 7px 10px;
+	width: calc(100% - 13px);
+	.btn-default {
+		width: 50%;
+		font-size: 13px;
+		cursor: pointer;
+		@include button-variant(#0ea646, #fff, #0ea646);
+	}
+	&.three-btn {
+		.btn-default {
+			width: calc(100% / 3);
+		}
+	}
+}
+.btn-primary {
+	@include gradient-vertical(#5249c1, #6f68cb);
+	@include button-size(.5em, 0, 20px, 1.3em, 6px);
+	@include box-shadow(#474282 0 3px 2px);
+	margin-top: 15px;
+	border-top-color:#645cc7;
+	border-bottom-color:#5c56a9;
+	border-left:none;
+	border-right:none;
+	cursor: pointer;
+}
+
+.btn-success {
+	@include gradient-vertical(#70bc44, #12a746);
+	@include button-size(.5em, 0, 20px, 1.3em, 6px);
+	@include box-shadow(#0a6a2d 0 3px 2px);
+	margin-top: 15px;
+	border-left:none;
+	border-right:none;
+	border-top: none;
+	cursor: pointer;
+}
+
+.search-form {
+	padding-top: 12px;
+	.form-group {
+		margin-bottom: 10px;
+	}
+	option {
+		color:#999;
+	}
+	.btn-primary {
+		margin-top: 25px;
+	}
+}
+.row-bottom {
+	position: absolute;
+	bottom: 10%;
+	width: calc(100% - 14px);
+}
+.row-search {
+	.form-group {
+		margin-bottom: 0;
+		position: relative;
+		.form-control {
+			padding-left: 40px;
+			border-color: $doc_green;
+			color: $doc_green;
+			height: 34px;
+			font-size: 13px;
+			margin-bottom: 10px;
+			@include placeholder($doc_green);
+		}
+	}
+}
+.doc-list {
+	// padding-top: 10px;
+	h4, h5 {
+		color:#302a7a;
+	}
+	h4 {
+		margin-bottom: 3px;
+		font-weight: bold;
+	}
+	h5 {
+		margin-top: 0;
+		margin-bottom: 5px;
+		font-weight: normal;
+	}
+	.specialization {
+		color: $doc_green;
+		font-style: italic;
+		font-size: 11px;
+		line-height: 1.2;
+		display: inline-block;
+		float: left;
+		clear: both;
+		margin-bottom: 4px;
+		padding-right: 4px;
+	}
+	.adress {
+		padding-top: 3px;
+		margin-top: 4px;
+		margin-bottom: 4px;
+		font-size: 11px;
+		line-height: 1.2;
+		display: inline-block;
+		position: relative;
+		padding-left: 18px;
+		float: left;
+		clear: both;
+	}
+	.ranking {
+		font-size: 13px;
+		font-weight: bold;
+		color:$doc_green;
+		margin-top: 0;
+		margin-bottom: 4px;
+	}
+	.hr {
+		border-bottom: 1px solid #cbcbcb;
+		margin: 0 -15px;
+		padding: 0;
+
+	}
+	.lbl {
+		color: #fff;
+		background-color: $doc_green;
+		border-radius: 4px;
+		padding: 3px 8px;
+		font-size: 13px;
+		white-space: nowrap;
+		margin-top: 2px;
+		display: inline-block;
+		float: right;
+		&.clear-both {
+			clear: both;
+		}
+	}
+	.doc-reviews {
+		font-size: 12px;
+		text-decoration: underline;
+		white-space: nowrap;
+		margin: 4px 0;
+		display: inline-block;
+		float: right;
+		clear: both;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&.select-place {
+		margin-top: -15px;
+	}
+	.select-place-title {
+		margin-bottom: 20px;
+	}
+
+
+	.doc-border .adress {
+		margin-top: -1px;
+	}
+
+	@media (max-width: 320px) and (orientation: portrait){
+		.img-responsive {
+			max-width: 120%;
+		}
+		.media-body {
+			padding-left: 10px;
+		}
+	}
+}
+.ranking-stars {
+	width: 78px;
+	height: 14px;
+	overflow: hidden;
+	display: block;
+	float: right;
+	text-align: right;
+	i {
+		width: 12px;
+		height: 12px;
+		display: inline-block;
+		background-image: url(../img/star.gif);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top left;
+		&.blank {
+			background-position: bottom left;
+		}
+	}
+}
+.bottom-lbl {
+	position: relative;
+	.lbl {
+		position: relative;
+		right: 0;
+		top: 0;
+	}
+}
+.form-group.without_padding {
+	margin-bottom: 0;
+}
+.date-line {
+	font-size: 11px;
+}
+.main-ranking {
+	.ranking {
+		font-size: 28px;
+	}
+	.ranking-stars {
+		display: inline-block;
+		text-align: center;
+		margin-top: 4px;
+		padding-bottom: 8px;
+		height: 16px;
+		width: 100%;
+		i {
+			width: 16px;
+			height: 16px;
+		}
+	}
+	.doc-reviews {
+		width: 100%;
+		text-align: center;
+		font-size: 14px;
+		text-decoration: none;
+	}
+}
+.doc-border {
+	border:1px solid #a1a0a0;
+	border-radius: 6px;
+	padding: 6px 0;
+}
+.col-xs-offsetMy {
+	margin-left: 3%;
+}
+.padding-vertical {
+	margin: 7px;
+}
+.pull-down {
+	padding-top: 2px;
+}
+.text-green {
+	color: $doc_green;
+	padding: 10px 40px 0;
+	margin-bottom: 0px;
+	line-height: 1.2em;
+}
+.posrel {
+	position: relative;
+}
+.arrow-to {
+	position: absolute;
+	right: 3%;
+	top: 42%;
+}
