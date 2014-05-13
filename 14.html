@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Doctu.ru - карта 14</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="ico-menu"><i class="doc-ico"></i></div>
+				<div class="navbar-brand">Карта</div>
+				<div class="ico-settings"><i class="doc-ico"></i></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script>
+	var myMap;
+
+	// Дождёмся загрузки API и готовности DOM.
+	ymaps.ready(init);
+
+	function init() {
+	    // Создание экземпляра карты и его привязка к контейнеру с
+	    // заданным id ("map").
+	    myMap = new ymaps.Map('Yamap', {
+	        // При инициализации карты обязательно нужно указать
+	        // её центр и коэффициент масштабирования.
+	        center: [55.76, 37.64], // Москва
+	        zoom: 10,
+	    });
+	}
+	</script>
+
+	<div id="Yamap"></div>
+</body>
+</html>

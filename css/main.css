@@ -3007,6 +3007,99 @@ input[type="button"].btn-block {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide img {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  zoom: 1;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+.slick-slide img {
+  display: block;
+  border: 3px solid #fff;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-slider {
+  margin-bottom: 30px;
+}
+
 .ico-menu, .ico-settings {
   float: left;
   padding: 11.5px 15px;
@@ -3093,6 +3186,13 @@ input[type="button"].btn-block {
   position: relative;
   margin-right: 5px;
 }
+.doc-ico.ico-about-clinic {
+  background-position: -155px -23px;
+  height: 20px;
+  top: 5px;
+  position: relative;
+  margin-right: 5px;
+}
 .doc-ico.ico-education {
   background-position: -84px 0px;
   height: 20px;
@@ -3102,6 +3202,20 @@ input[type="button"].btn-block {
 }
 .doc-ico.ico-sert {
   background-position: -109px 0px;
+  height: 20px;
+  top: 5px;
+  position: relative;
+  margin-right: 5px;
+}
+.doc-ico.ico-gal {
+  background-position: -155px 0px;
+  height: 20px;
+  top: 5px;
+  position: relative;
+  margin-right: 5px;
+}
+.doc-ico.ico-spec {
+  background-position: -177px 0px;
   height: 20px;
   top: 5px;
   position: relative;
@@ -3164,8 +3278,8 @@ html, body {
 }
 
 .btn-centr.btn-group {
-  margin: 0 7px 10px;
-  width: calc(100% - 13px);
+  margin: 0 0 10px;
+  width: 100%;
 }
 .btn-centr.btn-group .btn-default {
   width: 50%;
@@ -3444,11 +3558,15 @@ html, body {
   padding-top: 2px;
 }
 
-.text-green {
-  color: #0ea646;
+.text-info {
   padding: 10px 40px 0;
   margin-bottom: 0px;
   line-height: 1.2em;
+  color: #555;
+}
+
+.text-green {
+  color: #0ea646;
 }
 
 .posrel {
@@ -3459,6 +3577,15 @@ html, body {
   position: absolute;
   right: 3%;
   top: 42%;
+}
+
+.row-gallery {
+  margin: 0 -15px;
+}
+
+#Yamap {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
