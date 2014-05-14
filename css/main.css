@@ -3244,6 +3244,54 @@ input[type="button"].btn-block {
   width: 21px;
   height: 21px;
 }
+.doc-ico.ico-search1 {
+  background-position: 0px -43px;
+  width: 21px;
+  height: 21px;
+  top: 6px;
+  position: relative;
+  margin-right: 10px;
+}
+.doc-ico.ico-doctor {
+  background-position: -19px -43px;
+  width: 21px;
+  height: 21px;
+  top: 6px;
+  position: relative;
+  margin-right: 10px;
+}
+.doc-ico.ico-clinic1 {
+  background-position: -40px -43px;
+  width: 21px;
+  height: 21px;
+  top: 6px;
+  position: relative;
+  margin-right: 10px;
+}
+.doc-ico.ico-call {
+  background-position: -82px -43px;
+  width: 21px;
+  height: 22px;
+  top: 6px;
+  position: relative;
+  margin-right: 10px;
+}
+.doc-ico.ico-filter {
+  background-position: -61px -43px;
+  width: 21px;
+  height: 21px;
+  top: 6px;
+  position: relative;
+  margin-right: 10px;
+}
+.doc-ico.ico-arrow-right {
+  background-position: -100px -42px;
+  width: 21px;
+  height: 21px;
+  top: 6px;
+  position: relative;
+  margin-right: 10px;
+}
 
 .ico-search {
   position: absolute;
@@ -3308,6 +3356,24 @@ html, body {
   width: calc(100% / 3);
 }
 
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 50px 0;
+  }
+
+  to {
+    background-position: 0 0;
+  }
+}
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 50px 0;
+  }
+
+  to {
+    background-position: 0 0;
+  }
+}
 .btn-primary {
   background-image: -webkit-linear-gradient(top, #5249c1 0%, #6f68cb 100%);
   background-image: -o-linear-gradient(top, #5249c1 0%, #6f68cb 100%);
@@ -3345,6 +3411,19 @@ html, body {
   border-right: none;
   border-top: none;
   cursor: pointer;
+}
+
+.btn-primary.animated, .btn-success.animated {
+  -webkit-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 50px 50px;
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
 }
 
 .search-form {
@@ -3586,6 +3665,68 @@ html, body {
 #Yamap {
   width: 100%;
   height: 100%;
+}
+
+/* LEFT MENU */
+.left-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 80%;
+  left: -80%;
+  height: 100%;
+  background-color: #282c35;
+  z-index: 1040;
+}
+.left-menu ul {
+  margin: 0;
+  padding: 0;
+}
+.left-menu li {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #20232a;
+}
+.left-menu li:active, .left-menu li:hover, .left-menu li.active {
+  background-color: #22262e;
+}
+.left-menu a {
+  color: #eff3fa;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  padding-left: 17px;
+  text-decoration: none;
+}
+.left-menu a .ico-arrow-right {
+  float: right;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+@media (min-width: 480px) {
+  .left-menu {
+    left: 0;
+    top: 42px;
+    width: 54px;
+  }
+
+  .container-main {
+    margin-left: 54px;
+  }
+
+  .sm-hidden {
+    display: none;
+  }
+
+  .ico-arrow-right {
+    display: none;
+  }
+
+  #Yamap {
+    margin-left: 54px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

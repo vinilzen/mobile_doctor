@@ -1,0 +1,79 @@
+html
+  head
+    title Doctu.ru - Клиники
+    == Slim::Template.new('head.slim').render
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          .ico-menu
+            i.doc-ico
+          .navbar-brand Клиники
+          .ico-settings
+            i.doc-ico
+    
+    == Slim::Template.new('menu.slim').render
+
+    .container.container-main
+      .row.row-search
+        .col-xs-16
+          form.form-horizontal role="form" 
+            .form-group
+              .col-xs-16
+                span.ico-search.doc-ico
+                input.form-control placeholder=("Поиск по названию") type="text" 
+      .row
+        .col-xs-16
+          ul.media-list.doc-list
+            li.media.row
+              .media-body.col-xs-11
+                a href="/doc.html" 
+                  h4.media-heading Клиническая больница №133 им. Л.Г.Соколова
+                p.adress
+                  i.doc-ico.ico-addr
+                  | Удельная, Пионерская
+              .col-xs-5.text-right
+                h3.ranking 5,0
+                span.ranking-stars
+                  i
+                  i
+                  i
+                  i
+                  i
+                a.doc-reviews href="#"  По 2 отзывам
+            li.hr
+            li.media.row
+              .media-body.col-xs-11
+                a href="/doc.html" 
+                  h4.media-heading Клиническая больница №133 им. Л.Г.Соколова
+                p.adress
+                  i.doc-ico.ico-addr
+                  | Пионерская, Удельная, Балтийская
+              .col-xs-5.text-right
+                h3.ranking 5,0
+                span.ranking-stars
+                  i
+                  i
+                  i.blank
+                  i.blank
+                  i.blank
+                a.doc-reviews href="#"  По 3 отзывам
+            li.hr
+            li.media.row
+              .media-body.col-xs-11
+                a href="/doc.html" 
+                  h4.media-heading Клиническая больница №133 им. Л.Г.Соколова
+                p.adress
+                  i.doc-ico.ico-addr
+                  | Удельная, Пионерская
+              .col-xs-5.text-right
+                h3.ranking 5,0
+                span.ranking-stars
+                  i
+                  i
+                  i
+                  i
+                  i.blank
+                a.doc-reviews href="#"  По 4 отзывам
+            li.hr
+    == Slim::Template.new('script.slim').render

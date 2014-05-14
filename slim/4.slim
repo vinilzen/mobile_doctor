@@ -1,0 +1,78 @@
+html
+  head
+    title Doctu.ru - Врач Анкета    
+    == Slim::Template.new('head.slim').render
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          a.ico-menu href="./1.html" 
+            i.doc-ico.back-ico
+          .navbar-brand.doc-title Долматов Григорий Дмит...
+
+
+    == Slim::Template.new('menu.slim').render
+
+    .container.container-main
+      .row
+        .btn-group.btn-centr.three-btn
+          button.btn.btn-default.search-doctor.active type="button"  Анкета
+          button.btn.btn-default.search-clinic type="button"  Инфо
+          button.btn.btn-default.search-clinic type="button"  Отзывы
+      .row
+        .col-xs-16
+          ul.media-list.doc-list
+            li.media.row
+              a.col-xs-3 href="#" 
+                img.media-object.img-responsive src="./img/ava.jpg" 
+              .media-body.col-xs-9
+                a href="/doc.html" 
+                  h4.media-heading Долматов
+                  h5 Григорий Дмитриевич
+                span.specialization Мамолог, Онколог, Хирург
+              .col-xs-4.text-right
+                h3.ranking 5,0
+                span.ranking-stars
+                  i
+                  i
+                  i
+                  i
+                  i
+                a.doc-reviews href="#"  По 2 отзывам
+            li.media.row
+              .col-xs-16
+                .form-group.without_padding
+                  .btn.btn-primary.btn-lg.btn-block.animated Записаться на прием
+              .clearfix &nbsp;
+            li.media.row
+              .media-body.col-xs-16
+                h2
+                  i.doc-ico.ico-clinic
+                  | Места приема
+              .media-body.col-xs-16
+                a href="/doc.html" 
+                  h4.media-heading Клиническая больница №133 им. Л.Г.Соколова
+                p.adress
+                  i.doc-ico.ico-addr
+                  | Удельная, Пионерская
+                span.lbl От 3600 р.
+            li.hr
+            li.media.row
+              .media-body.col-xs-16
+                a href="/doc.html" 
+                  h4.media-heading Медика на Пулковской
+                p.adress
+                  i.doc-ico.ico-addr
+                  | Пионерская, Пулковская
+                span.lbl От 3600 р.
+            li.hr
+            li.media.row
+              .media-body.col-xs-16
+                a href="/doc.html" 
+                  h4.media-heading Центр профилактической медицины "НикаМед"
+                p.adress
+                  i.doc-ico.ico-addr
+                  | Удельная, Пионерская
+                span.lbl От 3600 р.
+            li.hr
+    == Slim::Template.new('script.slim').render

@@ -1,0 +1,61 @@
+html
+  head
+    title Doctu.ru - Поиск
+    == Slim::Template.new('head.slim').render
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          .ico-menu
+            i.doc-ico
+          .navbar-brand Поиск
+          .ico-settings
+            i.doc-ico
+
+
+    == Slim::Template.new('menu.slim').render
+
+    .container.container-main
+      .row
+        .btn-group.btn-centr
+          button.btn.btn-default.search-doctor.active type="button"  Врачи
+          button.btn.btn-default.search-clinic type="button"  Клиники
+      .row
+        .col-xs-16
+          form.search-form role="form" 
+            .form-group
+              select.form-control.input-lg
+                option Город
+                option Москва
+                option Санкт-Петербург
+                option Новосибирск
+                option Екатеринбург
+            .form-group
+              select.form-control.input-lg
+                option Специализация
+                option Акушер
+                option Акушер-гинеколог
+                option МРТ
+                option УЗИ
+            .form-group
+              select.form-control.input-lg
+                option Метро
+                option Автово
+                option Адмиралтейская
+                option Академическая
+                option Балтийская
+            .form-group
+              .btn.btn-primary.btn-lg.btn-block Найти
+      .row.row-bottom
+        .col-xs-8
+          a.ico-circl.ico-desktop href="#" 
+            span
+              i.doc-ico
+            | Полная версия сайта
+        .col-xs-8
+          a.ico-circl.ico-call href="#" 
+            span
+              i.doc-ico
+            | Позвоните мне
+
+    == Slim::Template.new('script.slim').render

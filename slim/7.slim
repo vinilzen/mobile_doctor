@@ -1,0 +1,60 @@
+html
+  head
+    title Doctu.ru - Поиск
+    == Slim::Template.new('head.slim').render
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          a.ico-menu href="./1.html" 
+            i.doc-ico.back-ico
+          .navbar-brand.doc-title Долматов Григорий Дмит...
+
+    == Slim::Template.new('menu.slim').render
+
+    .container.container-main
+      .row
+        .col-xs-16
+          ul.media-list.doc-list.select-place
+            li.media.row
+              .media-body.col-xs-16
+                h2.select-place-title
+                  i.doc-ico.ico-clinic
+                  | Места приема
+              .media-body.col-xs-16
+                a href="/doc.html" 
+                  h4.media-heading Клиническая больница №133 им. Л.Г.Соколова
+                p.adress
+                  i.doc-ico.ico-addr
+                  | Удельная, Пионерская
+                span.lbl От 3600 р.
+            li.hr
+            li.media.row
+              .media-body.col-xs-16
+                a href="/doc.html" 
+                  h4.media-heading Клиническая больница №133 им. Л.Г.Соколова
+                p.adress
+                  i.doc-ico.ico-addr
+                  | Пионерская, Пулковская
+                span.lbl От 3600 р.
+            li.hr
+            li.media.row
+              .media-body.col-xs-16
+                a href="/doc.html" 
+                  h4.media-heading Медика на Пулковской
+                p.adress
+                  i.doc-ico.ico-addr
+                  | Пионерская, Пулковская
+                span.lbl От 3600 р.
+            li.hr
+            li.media.row
+              .media-body.col-xs-16
+                a href="/doc.html" 
+                  h4.media-heading Центр профилактической медицины "НикаМед"
+                p.adress
+                  i.doc-ico.ico-addr
+                  | Удельная, Пионерская
+                span.lbl От 3600 р.
+            li.hr
+            
+    == Slim::Template.new('script.slim').render

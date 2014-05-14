@@ -141,13 +141,61 @@
 		width: 21px;
 		height: 21px;
 	}
+	&.ico-search1 {
+		background-position: 0px -43px;
+		width: 21px;
+		height: 21px;
+		top: 6px;
+		position: relative;
+		margin-right: 10px;
+	}
+	&.ico-doctor {
+		background-position: -19px -43px;
+		width: 21px;
+		height: 21px;
+		top: 6px;
+		position: relative;
+		margin-right: 10px;
+	}
+	&.ico-clinic1 {
+		background-position: -40px -43px;
+		width: 21px;
+		height: 21px;
+		top: 6px;
+		position: relative;
+		margin-right: 10px;
+	}
+	&.ico-call {
+		background-position: -82px -43px;
+		width: 21px;
+		height: 22px;
+		top: 6px;
+		position: relative;
+		margin-right: 10px;
+	}
+	&.ico-filter {
+		background-position: -61px -43px;
+		width: 21px;
+		height: 21px;
+		top: 6px;
+		position: relative;
+		margin-right: 10px;
+	}
+	&.ico-arrow-right {
+		background-position: -100px -42px;
+		width: 21px;
+		height: 21px;
+		top: 6px;
+		position: relative;
+		margin-right: 10px;
+	}
 }
 
-		.ico-search {
-			position: absolute;
-			left: 20px;
-			top: 9px;
-			width: 17px;
-			height: 19px;
-			background-position: -137px -23px;
-		}
+.ico-search {
+	position: absolute;
+	left: 20px;
+	top: 9px;
+	width: 17px;
+	height: 19px;
+	background-position: -137px -23px;
+}

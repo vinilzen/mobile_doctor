@@ -1,0 +1,83 @@
+html
+  head
+    title Doctu.ru - Врач Отзывы
+    == Slim::Template.new('head.slim').render
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          a.ico-menu href="./1.html" 
+            i.doc-ico.back-ico
+          .navbar-brand.doc-title Долматов Григорий Дмит...
+    
+    == Slim::Template.new('menu.slim').render
+
+    .container.container-main
+      .row
+        .btn-group.btn-centr.three-btn
+          button.btn.btn-default.search-doctor type="button"  Анкета
+          button.btn.btn-default.search-clinic type="button"  Инфо
+          button.btn.btn-default.search-clinic.active type="button"  Отзывы
+      .row
+        .col-xs-16
+          ul.media-list.doc-list
+            li.media.row
+              .col-xs-16.text-center.main-ranking
+                h3.ranking 5,0
+                span.ranking-stars
+                  i
+                  i
+                  i
+                  i
+                  i
+                a.doc-reviews href="#"  7 отзывов
+            li.hr
+            li.media.row.row-review
+              .media-body.col-xs-8
+                h5
+                  strong Алексей
+                p.date-line 23 мая 1991
+              .col-xs-8.text-right
+                h3.ranking 5,0
+                span.ranking-stars
+                  i
+                  i
+                  i
+                  i
+                  i
+              .col-xs-16
+                p Очень внимательный доктор. Перед операцией тщательнецшим отзывом следил за мноей. Поэтому я не боялась что анастезия мне не как  то подойдет. К ее выбору отнасся с большой доей ответственности.
+            li.hr
+            li.media.row.row-review
+              .media-body.col-xs-8
+                h5
+                  strong Дмитрий
+                p.date-line 23 мая 1991
+              .col-xs-8.text-right
+                h3.ranking 5,0
+                span.ranking-stars
+                  i
+                  i
+                  i
+                  i
+                  i
+              .col-xs-16
+                p Очень внимательный доктор. Перед операцией тщательнецшим отзывом следил за мноей. Поэтому я не боялась что анастезия мне не как  то подойдет. К ее выбору отнасся с большой доей ответственности.
+            li.hr
+            li.media.row.row-review
+              .media-body.col-xs-8
+                h5
+                  strong Артем
+                p.date-line 23 мая 1991
+              .col-xs-8.text-right
+                h3.ranking 5,0
+                span.ranking-stars
+                  i
+                  i
+                  i
+                  i
+                  i
+              .col-xs-16
+                p Очень внимательный доктор. Перед операцией тщательнецшим отзывом следил за мноей. Поэтому я не боялась что анастезия мне не как  то подойдет. К ее выбору отнасся с большой доей ответственности.
+                
+    == Slim::Template.new('menu.slim').render

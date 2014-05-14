@@ -1,0 +1,69 @@
+html
+  head
+    title Doctu.ru - Запись к врачу (форма) 8
+    == Slim::Template.new('head.slim').render
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          a.ico-menu href="./1.html" 
+            i.doc-ico.back-ico
+          .navbar-brand.doc-title Долматов Григорий Дмит...
+
+
+    == Slim::Template.new('menu.slim').render
+
+    .container.container-main
+      .row.doc-list
+        .col-xs-15.col-xs-offsetMy
+          .row.doc-border
+            a.col-xs-3 href="#" 
+              img.media-object.img-responsive src="./img/ava.jpg" 
+            .col-xs-13
+              a href="/doc.html" 
+                h4.media-heading Долматов
+                h5 Григорий Дмитриевич
+              span.specialization Мамолог, Онколог, Хирург
+            .clearfix.padding-vertical
+            a.col-xs-3 href="#" 
+              img.img-responsive.pull-down alt="" src="./img/map.gif" 
+            .col-xs-13
+              a href="/doc.html" 
+                h4.media-heading Клиническая больница №133 им. Л.Г.Соколова
+              p.adress
+                i.doc-ico.ico-addr
+                | Пионерская, Удельная, Балтийская
+      .row
+        .col-xs-16
+          p.text-center.text-info.text-green Для подтверждения записи пожалуйста заполните поля ниже
+      .row
+        .col-xs-16
+          form.search-form role="form" 
+            .form-group
+              input.form-control.input-lg placeholder=("Ваше ФИО") type="text" 
+            .form-group
+              select.form-control.input-lg
+                option Дата
+                option value="1"  13 мая
+                option value="1"  14 мая
+                option value="1"  15 мая
+                option value="1"  16 мая
+                option value="1"  17 мая
+                option value="1"  18 мая
+                option value="1"  19 мая
+                option value="1"  20 мая
+            .form-group
+              select.form-control.input-lg
+                option Время
+                option value="1"  10:00
+                option value="1"  11:00
+                option value="1"  12:00
+            .form-group
+              input.form-control.input-lg placeholder="E-mail" type="text" 
+            .form-group
+              input.form-control.input-lg placeholder="Комментарии" type="text" 
+            .form-group
+              input.form-control.input-lg placeholder="Телефон" type="text" 
+            .form-group
+              .btn.btn-primary.btn-lg.btn-block Найти
+  == Slim::Template.new('script.slim').render
