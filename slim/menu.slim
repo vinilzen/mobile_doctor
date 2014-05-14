@@ -16,9 +16,81 @@
       a href="4.html" 
         i.doc-ico.ico-call
         span.sm-hidden Позвоните мне
-        span.doc-ico.ico-arrow-right
+        span.doc-ico.ico-arrow-right1
     li
       a href="5.html" 
         i.doc-ico.ico-filter
         span.sm-hidden Подбор врача
-        span.doc-ico.ico-arrow-right
+        span.doc-ico.ico-arrow-right1
+
+.top-menu.container.container-main
+  .row
+    .btn-group.btn-centr.three-btn.btn-group-invers
+      button.btn.btn-default.search-doctor type="button" По рейтингу
+      button.btn.btn-default.search-clinic.active type="button" По стоимости
+      button.btn.btn-default.search-clinic type="button" По стажу
+  ul.row
+    li.row
+      label.col-xs-16 
+        span.ttl Только с отзывами
+        input type="checkbox"
+        span.check-custom
+          em
+    li.hr
+    li.row
+      label.col-xs-16
+        span.ttl Запись по телефону
+        input type="checkbox"
+        span.check-custom
+          em
+    li.hr
+    li.row
+      label.col-xs-16
+        span.ttl Вызов на дом
+        input type="checkbox"
+        span.check-custom
+          em
+    li.hr
+    li.row
+      .col-xs-16
+        span.ttl Категория
+        .clearfix
+        .row.text-center
+          label.radio
+            input type="radio" name="cat"
+            span.rad-cus
+            span.ttl2 Взрослая 
+          label.radio
+            input type="radio" name="cat"
+            span.rad-cus
+            span.ttl2 Детская 
+          label.radio
+            input type="radio" name="cat" checked="checked"
+            span.rad-cus
+            span.ttl2 Не важно
+    li.hr
+    li.row
+      .col-xs-16
+        span.ttl Пол врача
+        .clearfix
+        .row.text-center
+          label.radio
+            input type="radio" name="sex"
+            span.rad-cus
+            span.ttl2 Мужской 
+          label.radio
+            input type="radio" name="sex"
+            span.rad-cus
+            span.ttl2 Женский 
+          label.radio 
+            input type="radio" name="sex" checked="checked"
+            span.rad-cus
+            span.ttl2 Не важно
+    li.hr
+    li.row
+      .col-xs-8
+        .btn.btn-lg.btn-primary.btn-block Показать
+      .col-xs-8
+        .btn.btn-lg.btn-warning.btn-block.cancel-set Отменить
+      
+

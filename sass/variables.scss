@@ -166,8 +166,8 @@ $btn-info-bg:                    $brand-info !default;
 $btn-info-border:                darken($btn-info-bg, 5%) !default;
 
 $btn-warning-color:              #fff !default;
-$btn-warning-bg:                 $brand-warning !default;
-$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+$btn-warning-bg:                 #8e8ca0 !default;
+$btn-warning-border:             lighten(#8e8ca0, 5%) !default;
 
 $btn-danger-color:               #fff !default;
 $btn-danger-bg:                  $brand-danger !default;
@@ -826,12 +826,6 @@ $text-muted:                  $gray-light !default;
 $abbr-border-color:           $gray-light !default;
 //** Headings small color
 $headings-small-color:        $gray-light !default;
-//** Blockquote small color
-$blockquote-small-color:      $gray-light !default;
-//** Blockquote font size
-$blockquote-font-size:        ($font-size-base * 1.25) !default;
-//** Blockquote border color
-$blockquote-border-color:     $gray-lighter !default;
 //** Page header border color
 $page-header-border-color:    $gray-lighter !default;
 

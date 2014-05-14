@@ -9,17 +9,27 @@ $(function() {
 
 	$('.ico-menu').click(function(){
 		if (document.body.clientWidth<480) {
-			if ( $('.left-menu').hasClass('active') ) {
-				$('.left-menu')
-					.animate({left:'-80%'})
-					.removeClass('active');
-			} else {
-				$('.left-menu')
-					.animate({left:0})
-					.addClass('active');
-			}
+			$('.left-menu').toggleClass('active');
 		}
 	});
+
+	var h = $('.top-menu').outerHeight();
+	$('.top-menu').css({top: -h});
+
+	$('.ico-settings, .cancel-set').click(function(){
+		$('.top-menu').toggleClass('active');
+
+		if (document.body.clientWidth<480) {
+			if ($('.top-menu').hasClass('active') ) {
+				$('.top-menu').css({top:0});
+			} else {
+				var h = $('.top-menu').outerHeight();
+				$('.top-menu').css({top: -h});
+			}
+		}
+		return false;
+	});
+
 
 
 	// Галерея для картинок в инфо клиниики
@@ -36,21 +46,17 @@ $(function() {
 	$('.container-main, .left-menu')
 		.swiperight(function(e) {
 			if (document.body.clientWidth<480) {
-				$('.left-menu')
-					.animate({left:0})
-					.addClass('active');
+				$('.left-menu').addClass('active');
 			}
 		})
 		.swipeleft(function(e) {
 			if (document.body.clientWidth<480) {
-				$('.left-menu')
-					.animate({left:'-80%'})
-					.removeClass('active');
+				$('.left-menu').removeClass('active');
 			}
 		});
 
-		$( ".btn" ).click(function() {
-			$( this ).toggleClass( "animated" );
-		});
+	$( ".btn-lg:not(.btn-warning)" ).click(function() {
+		$( this ).toggleClass( "animated" );
+	});
 
 });

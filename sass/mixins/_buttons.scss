@@ -11,28 +11,18 @@
   // &:hover,
   // &:focus,
   // &:active,
-  &.active,
+  // &.active,
   .open > &.dropdown-toggle {
     color: #fff;
     background-color: $doc_green;
   }
-  &:active,
+  // &:active,
   &.active,
   .open > &.dropdown-toggle {
     background-image: none;
   }
   &.disabled,
   &[disabled],
-  fieldset[disabled] & {
-    &,
-    &:hover,
-    &:focus,
-    &:active,
-    &.active {
-      background-color: $background;
-          border-color: $border;
-    }
-  }
 
   .badge {
     color: $background;

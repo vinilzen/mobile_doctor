@@ -75,7 +75,6 @@ pre {
 
 button,
 input,
-optgroup,
 select,
 textarea {
   color: inherit; // 1
@@ -173,14 +172,6 @@ textarea {
   overflow: auto;
 }
 
-//
-// Don't inherit the `font-weight` (applied by a rule above).
-// NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
-//
-
-optgroup {
-  font-weight: bold;
-}
 
 // Tables
 // ==========================================================================
