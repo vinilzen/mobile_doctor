@@ -189,6 +189,14 @@
 		position: relative;
 		margin-right: 10px;
 	}
+	&.ico-map {
+		width: 38px;
+		height: 38px;
+		background-position: 0 -66px;
+		position: fixed;
+		right: 3%;
+		bottom: 3%;
+	}
 }
 
 .ico-search {
