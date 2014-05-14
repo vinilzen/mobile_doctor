@@ -1,0 +1,60 @@
+html
+  head
+    title Doctu.ru - Поиск
+    == Slim::Template.new('head.slim').render
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          a.ico-menu href="./1.html" 
+            i.doc-ico.back-ico
+          .navbar-brand.doc-title Клиническая больниц...
+
+    == Slim::Template.new('menu.slim').render
+
+    .container.container-main
+      .row
+        .btn-group.btn-centr.three-btn
+          button.btn.btn-default.search-doctor type="button"  Анкета
+          button.btn.btn-default.search-clinic.active type="button"  Инфо
+          button.btn.btn-default.search-clinic type="button"  Отзывы
+      .row
+        .col-xs-16
+          ul.media-list.doc-list
+            li.media.row
+              .media-body.col-xs-16
+                h2
+                  i.doc-ico.ico-about-clinic
+                  | О клинике
+              .media-body.col-xs-16
+                p Доцент к.м.н. Кафедры аллергологии и клинической фармокологии ФПКиПП ГОУ ВПО СПбГПМА Минздрав соцразвития России.
+                p Основные направления деятельности: диагностика и лечение при бронхиальной астме, аллергическом рините, аллергическом дерматите. Проведение и офенка спирометрии.
+            li.media.row
+              .media-body.col-xs-16
+                h2
+                  i.doc-ico.ico-gal
+                  | Фотографии
+            li.media.row.row-gallery
+              .slick
+                div
+                  a href="./img/il1.jpg" 
+                    img.img-responsive alt="" src="./img/il1.jpg" /
+                div
+                  a href="./img/il2.jpg" 
+                    img.img-responsive alt="" src="./img/il2.jpg" /
+                div
+                  a href="./img/il3.jpg" 
+                    img.img-responsive alt="" src="./img/il3.jpg" /
+                div
+                  a href="./img/il4.jpg" 
+                    img.img-responsive alt="" src="./img/il4.jpg" /
+            li.media.row
+              .media-body.col-xs-16
+                h2
+                  i.doc-ico.ico-spec
+                  | Специализации
+              .media-body.col-xs-16
+                p Доцент к.м.н. Кафедры аллергологии и клинической фармокологии ФПКиПП ГОУ ВПО СПбГПМА Минздрав соцразвития России.
+                p Основные направления деятельности: диагностика и лечение при бронхиальной астме, аллергическом рините, аллергическом дерматите. Проведение и офенка спирометрии.
+
+  == Slim::Template.new('script.slim').render

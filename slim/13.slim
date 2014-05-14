@@ -1,0 +1,29 @@
+html
+  head
+  title Doctu.ru - позвоните мне 13
+  == Slim::Template.new('head.slim').render
+body
+  .navbar.navbar-inverse.navbar-fixed-top
+    .container
+      .navbar-header
+        .ico-menu
+          i.doc-ico
+        .navbar-brand Позвоните мне
+        .ico-settings
+          i.doc-ico
+  == Slim::Template.new('menu.slim').render
+
+  .container.container-main
+    .row
+      .col-xs-16
+        p.text-center.text-info Оставьте контактные данные - и мы перезвоним и подберем врача под ваши требования.
+    .row
+      .col-xs-16
+        form.search-form role="form" 
+          .form-group
+            input.form-control.input-lg placeholder=("Ваше ФИО") type="text" 
+          .form-group
+            input.form-control.input-lg placeholder="Телефон" type="text" 
+          .form-group
+            .btn.btn-primary.btn-lg.btn-block Отправить
+  == Slim::Template.new('script.slim').render

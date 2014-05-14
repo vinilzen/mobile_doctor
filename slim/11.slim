@@ -1,0 +1,120 @@
+html
+  head
+    title Doctu.ru - анкета клиники (врачи) 11
+    == Slim::Template.new('head.slim').render
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          a.ico-menu href="./1.html" 
+            i.doc-ico.back-ico
+          .navbar-brand.doc-title Клиническая больница номе...
+
+    == Slim::Template.new('menu.slim').render
+
+    .container.container-main
+      .row
+        .btn-group.btn-centr.three-btn
+          button.btn.btn-default.search-doctor type="button"  Анкета
+          button.btn.btn-default.search-clinic.active type="button"  Инфо
+          button.btn.btn-default.search-clinic type="button"  Отзывы
+      .row.row-search
+        .col-xs-16
+          form.form-horizontal role="form" 
+            .form-group
+              .col-xs-16
+                span.ico-search.doc-ico
+                input.form-control placeholder=("Поиск по ФИО") type="text" 
+      .row
+        .col-xs-16
+          ul.media-list.doc-list
+            li.media.row
+              a.col-xs-3 href="#" 
+                img.media-object.img-responsive src="./img/ava.jpg" 
+              .media-body.col-xs-9
+                a href="/doc.html" 
+                  h4.media-heading Долматов
+                  h5 Григорий Дмитриевич
+                span.specialization Мамолог, Онколог, Хирург
+                p.adress
+                  i.doc-ico.ico-addr
+                  | Удельная, Пионерская
+              .col-xs-4.text-right
+                h3.ranking 5,0
+                span.ranking-stars
+                  i
+                  i
+                  i
+                  i
+                  i
+                a.doc-reviews href="#"  По 2 отзывам
+                span.lbl.clear-both От 3600 р.
+            li.hr
+            li.media.row
+              a.col-xs-3 href="#" 
+                img.media-object.img-responsive src="./img/ava1.jpg" 
+              .media-body.col-xs-9
+                a href="/doc.html" 
+                  h4.media-heading Кузьмичев
+                  h5 Владимир Сергеевич
+                span.specialization Акушер-гинеколог, Гинеколог, Врач УЗИ
+                p.adress
+                  i.doc-ico.ico-addr
+                  | Пионерская, Удельная, Балтийская
+              .col-xs-4.text-right
+                h3.ranking 5,0
+                span.ranking-stars
+                  i
+                  i
+                  i.blank
+                  i.blank
+                  i.blank
+                a.doc-reviews href="#"  По 3 отзывам
+                span.lbl.clear-both От 13600 р.
+            li.hr
+            li.media.row
+              a.col-xs-3 href="#" 
+                img.media-object.img-responsive src="./img/ava2.jpg" 
+              .media-body.col-xs-9
+                a href="/doc.html" 
+                  h4.media-heading Степанова
+                  h5 Ирина Андреевна
+                span.specialization Мамолог, Онколог, Хирург
+                p.adress
+                  i.doc-ico.ico-addr
+                  | Удельная, Пионерская
+              .col-xs-4.text-right
+                h3.ranking 5,0
+                span.ranking-stars
+                  i
+                  i
+                  i
+                  i
+                  i.blank
+                a.doc-reviews href="#"  По 4 отзывам
+                span.lbl.clear-both От 1900 р.
+            li.hr
+            li.media.row
+              a.col-xs-3 href="#" 
+                img.media-object.img-responsive src="./img/ava1.jpg" 
+              .media-body.col-xs-9
+                a href="/doc.html" 
+                  h4.media-heading Кузьмичев
+                  h5 Владимир Сергеевич
+                span.specialization Акушер-гинеколог, Гинеколог, Врач УЗИ
+                p.adress
+                  i.doc-ico.ico-addr
+                  | Пионерская, Удельная, Балтийская
+              .col-xs-4.text-right
+                h3.ranking 5,0
+                span.ranking-stars
+                  i
+                  i
+                  i.blank
+                  i.blank
+                  i.blank
+                a.doc-reviews href="#"  По 3 отзывам
+                span.lbl.clear-both От 13600 р.
+            li.hr
+
+  == Slim::Template.new('script.slim').render

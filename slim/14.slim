@@ -1,0 +1,36 @@
+html
+  head
+    title Doctu.ru - карта 14
+    == Slim::Template.new('head.slim').render
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          .ico-menu
+            i.doc-ico
+          .navbar-brand Карта
+          .ico-settings
+            i.doc-ico
+
+    == Slim::Template.new('menu.slim').render
+
+    #Yamap
+    script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" 
+    javascript:
+      var myMap;
+
+      //Дождёмся загрузки API и готовности DOM.
+      ymaps.ready(init);
+
+      function init() {
+          // Создание экземпляра карты и его привязка к контейнеру с
+          // заданным id ("map").
+          myMap = new ymaps.Map('Yamap', {
+              // При инициализации карты обязательно нужно указать
+              // её центр и коэффициент масштабирования.
+              center: [55.76, 37.64], // Москва
+              zoom: 10,
+          });
+      }
+    
+  == Slim::Template.new('script.slim').render
