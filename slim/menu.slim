@@ -13,17 +13,17 @@
         i.doc-ico.ico-clinic1
         span.sm-hidden Клиники
     li
-      a href="4.html" 
+      a href="13.html" 
         i.doc-ico.ico-call
         span.sm-hidden Позвоните мне
         span.doc-ico.ico-arrow-right1
     li
-      a href="5.html" 
+      a href="12.html" 
         i.doc-ico.ico-filter
         span.sm-hidden Подбор врача
         span.doc-ico.ico-arrow-right1
 
-.top-menu.container.container-main
+.top-menu.container.container-main.menu-doc
   .row
     .btn-group.btn-centr.three-btn.btn-group-invers
       button.btn.btn-default.search-doctor type="button" По рейтингу
@@ -91,6 +91,51 @@
       .col-xs-8
         .btn.btn-lg.btn-primary.btn-block Показать
       .col-xs-8
-        .btn.btn-lg.btn-warning.btn-block.cancel-set Отменить
+        .btn.btn-lg.btn-warning.btn-block.cancel-set data-type="menu-doc" Отменить
+      
+
+.top-menu.container.container-main.menu-clinic
+  .row
+    .btn-group.btn-centr.btn-group-invers
+      button.btn.btn-default.search-doctor.active type="button" По рейтингу
+      button.btn.btn-default.search-clinic type="button" По алфавиту
+  ul.row
+    li.row
+      label.col-xs-16 
+        span.ttl Только с отзывами
+        input type="checkbox"
+        span.check-custom
+          em
+    li.hr
+    li.row
+      label.col-xs-16
+        span.ttl Запись по телефону
+        input type="checkbox"
+        span.check-custom
+          em
+    li.hr
+    li.row
+      .col-xs-16
+        span.ttl Категория
+        .clearfix
+        .row.text-center
+          label.radio
+            input type="radio" name="cat"
+            span.rad-cus
+            span.ttl2 Взрослая 
+          label.radio
+            input type="radio" name="cat"
+            span.rad-cus
+            span.ttl2 Детская 
+          label.radio
+            input type="radio" name="cat" checked="checked"
+            span.rad-cus
+            span.ttl2 Не важно
+    li.hr
+    li.row
+      .col-xs-8
+        .btn.btn-lg.btn-primary.btn-block Показать
+      .col-xs-8
+        .btn.btn-lg.btn-warning.btn-block.cancel-set data-type="menu-clinic" Отменить
       
 

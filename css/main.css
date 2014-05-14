@@ -2190,8 +2190,8 @@ input[type="button"].btn-block {
 .ico-circl span i {
   width: 18px;
   height: 18px;
-  margin-top: 18px;
-  margin-left: 18px;
+  margin-top: 17px;
+  margin-left: 17px;
   display: block;
 }
 
@@ -2336,7 +2336,7 @@ input[type="button"].btn-block {
   left: 20px;
   top: 9px;
   width: 17px;
-  height: 19px;
+  height: 18px;
   background-position: -137px -23px;
 }
 
@@ -2351,7 +2351,7 @@ html, body {
   position: relative;
 }
 .container-main.top-menu {
-  position: fixed;
+  position: absolute;
   left: 0;
   width: 100%;
   background-color: #282c35;
@@ -2365,14 +2365,15 @@ html, body {
 }
 .navbar-brand.doc-title {
   white-space: nowrap;
-  width: calc(100% - 70px);
-  text-align: left;
+  width: 83%;
+  text-align: center;
   padding-left: 0;
 }
 
 .btn-centr.btn-group {
   margin: 0 0 10px;
   width: 100%;
+  margin-left: 1px;
 }
 .btn-centr.btn-group .btn-default {
   width: 50%;
@@ -2399,7 +2400,10 @@ html, body {
   color: #fff;
 }
 .btn-centr.btn-group.three-btn .btn-default {
-  width: calc(100% / 3);
+  width: 34%;
+}
+.btn-centr.btn-group.three-btn .btn-default:first-child, .btn-centr.btn-group.three-btn .btn-default:last-child {
+  width: 33%;
 }
 
 @keyframes progress-bar-stripes {
@@ -2507,8 +2511,8 @@ html, body {
 
 .row-bottom {
   position: absolute;
-  bottom: 10%;
-  width: calc(100% - 14px);
+  bottom: 7%;
+  width: 95%;
 }
 
 .row-search .form-group {
@@ -2559,7 +2563,7 @@ html, body {
 }
 .doc-list .adress {
   padding-top: 3px;
-  margin-top: 4px;
+  margin-top: 0px;
   margin-bottom: 4px;
   font-size: 11px;
   line-height: 1.2;
@@ -2588,7 +2592,7 @@ html, body {
   padding: 3px 8px;
   font-size: 13px;
   white-space: nowrap;
-  margin-top: 2px;
+  margin-top: 0px;
   display: inline-block;
   float: right;
 }
@@ -2596,13 +2600,14 @@ html, body {
   clear: both;
 }
 .doc-list .doc-reviews {
-  font-size: 12px;
+  font-size: 11px;
   text-decoration: underline;
   white-space: nowrap;
-  margin: 4px 0;
+  margin: 1px 0 4px;
   display: inline-block;
   float: right;
   clear: both;
+  color: #5850C3;
 }
 .doc-list .doc-reviews:hover {
   text-decoration: none;
@@ -2709,6 +2714,13 @@ html, body {
   line-height: 1.2em;
   color: #555;
 }
+.text-info.text-bottom {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 20px;
+}
 
 .text-green {
   color: #0ea646;
@@ -2748,14 +2760,17 @@ html, body {
 .top-menu {
   overflow: hidden;
   height: auto;
-  padding: 20px 15px;
+  padding: 10px 15px 20px;
   top: -100%;
+  min-height: 0;
+  display: none;
   -webkit-transition: top 0.4s ease-in-out;
   -o-transition: top 0.4s ease-in-out;
   transition: top 0.4s ease-in-out;
 }
 .top-menu.active {
   top: 0;
+  display: block;
 }
 .top-menu label {
   color: #fff;
@@ -2837,7 +2852,26 @@ html, body {
   display: inline-block;
 }
 .top-menu .col-xs-8 {
-  margin-top: -15px;
+  margin-top: -5px;
+}
+.top-menu .btn-primary {
+  padding: 0.5em 0;
+  font-size: 16px;
+  line-height: 1.3em;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 0;
+  margin-left: 5%;
+}
+.top-menu .btn-warning {
+  padding: 0.5em 0;
+  font-size: 16px;
+  line-height: 1.3em;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 0;
+  margin-right: 5%;
+  float: right;
 }
 
 /* LEFT MENU */
@@ -2882,6 +2916,7 @@ html, body {
   float: right;
   margin-top: 8px;
   margin-right: 10px;
+  width: 16px;
 }
 
 @media (min-width: 480px) {

@@ -9,7 +9,7 @@ html
           .ico-menu
             i.doc-ico
           .navbar-brand Врачи
-          .ico-settings
+          .ico-settings data-type="menu-doc"
             i.doc-ico
     
     == Slim::Template.new('menu.slim').render
@@ -26,10 +26,10 @@ html
         .col-xs-16
           ul.media-list.doc-list
             li.media.row
-              a.col-xs-3 href="#" 
+              a.col-xs-3 href="4.html" 
                 img.media-object.img-responsive src="./img/ava.jpg" 
               .media-body.col-xs-9
-                a href="/doc.html" 
+                a href="4.html"
                   h4.media-heading Долматов
                   h5 Григорий Дмитриевич
                 span.specialization Мамолог, Онколог, Хирург
@@ -44,14 +44,14 @@ html
                   i
                   i
                   i
-                a.doc-reviews href="#"  По 2 отзывам
+                a.doc-reviews href="6.html"  По 2 отзывам
                 span.lbl.clear-both От 3600 р.
             li.hr
             li.media.row
-              a.col-xs-3 href="#" 
+              a.col-xs-3 href="4.html" 
                 img.media-object.img-responsive src="./img/ava1.jpg" 
               .media-body.col-xs-9
-                a href="/doc.html" 
+                a href="4.html"
                   h4.media-heading Кузьмичев
                   h5 Владимир Сергеевич
                 span.specialization Акушер-гинеколог, Гинеколог, Врач УЗИ
@@ -66,14 +66,14 @@ html
                   i.blank
                   i.blank
                   i.blank
-                a.doc-reviews href="#"  По 3 отзывам
+                a.doc-reviews href="6.html"  По 3 отзывам
                 span.lbl.clear-both От 13600 р.
             li.hr
             li.media.row
-              a.col-xs-3 href="#" 
+              a.col-xs-3 href="4.html" 
                 img.media-object.img-responsive src="./img/ava2.jpg" 
               .media-body.col-xs-9
-                a href="/doc.html" 
+                a href="4.html" 
                   h4.media-heading Степанова
                   h5 Ирина Андреевна
                 span.specialization Мамолог, Онколог, Хирург
@@ -88,7 +88,7 @@ html
                   i
                   i
                   i.blank
-                a.doc-reviews href="#"  По 4 отзывам
+                a.doc-reviews href="6.html"  По 4 отзывам
                 span.lbl.clear-both От 1900 р.
             li.hr
     == Slim::Template.new('script.slim').render
