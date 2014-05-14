@@ -1,106 +1,133 @@
-<!doctype html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Doctu.ru - Поиск</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="shortcut icon" href="favicon.ico">
-</head>
-<body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<a href="./1.html" class="ico-menu"><i class="doc-ico back-ico"></i></a>
-				<div class="navbar-brand doc-title">Клиническая больниц...</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<div class="left-menu">
-		<ul>
-			<li><a href="1.html"><i class="doc-ico ico-search1"></i><span class="sm-hidden">Поиск</span></a></li>
-			<li><a href="2.html"><i class="doc-ico ico-doctor"></i><span class="sm-hidden">Врачи</span></a></li>
-			<li><a href="3.html"><i class="doc-ico ico-clinic1"></i><span class="sm-hidden">Клиники</span></a></li>
-			<li><a href="4.html"><i class="doc-ico ico-call"></i><span class="sm-hidden">Позвоните мне</span><span class="doc-ico ico-arrow-right"></span></a></li>
-			<li><a href="5.html"><i class="doc-ico ico-filter"></i><span class="sm-hidden">Подбор врача</span><span class="doc-ico ico-arrow-right"></span></a></li>
-		</ul>
-	</div>
-	
-
-	<div class="container container-main">
-		<div class="row">
-			<div class="btn-group btn-centr three-btn">
-				<button type="button" class="btn btn-default search-doctor active">Анкета</button>
-				<button type="button" class="btn btn-default search-clinic">Инфо</button>
-				<button type="button" class="btn btn-default search-clinic">Отзывы</button>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-16">
-				<ul class="media-list doc-list">
-					<li class="media row">
-						<div class="media-body col-xs-11">
-							<a href="/doc.html">
-								<h4 class="media-heading">Клиническая больница №133 им. Л.Г.Соколова</h4>
-							</a>
-						</div>
-						<div class="col-xs-5 text-right">
-							<h3 class="ranking">5,0</h3>
-							<span class="ranking-stars">
-								<i class=""></i>
-								<i class=""></i>
-								<i class=""></i>
-								<i class=""></i>
-								<i class=""></i>
-							</span>
-						</div>
-					</li>
-					<li class="hr"></li>
-					<li class="media row">
-						<div class="media-body col-xs-16 posrel">
-							<h2><i class="doc-ico ico-clinic"></i>Адрес</h2>
-							<p class="adress"><i class="doc-ico ico-metro"></i>Удельная, Пионерская</p>
-							<p class="adress"><i class="doc-ico ico-addr"></i>Константинопольский переулок, 7 </p>
-							<a href="/1.html" class="arrow-to"><i class="doc-ico ico-arrow-right"></i></a>
-						</div>
-					</li>
-					<li class="hr"></li>
-					<li class="media row">
-						<div class="media-body col-xs-16 posrel">
-							<h2><i class="doc-ico ico-calendar"></i>График работы</h2>
-						</div>
-						<div class="col-xs-16">
-							<dl class="dl-horizontal">
-								<dt>Будни:</dt>
-								<dd>09:00 - 21:00  </dd>
-								<dt>Сб:</dt>
-								<dd>10:00 - 18:00  </dd>
-								<dt>Вс:</dt>
-								<dd>11:00 - 16:00  </dd>
-							</dl>
-						</div>	
-					</li>
-					<li class="hr"></li>
-					<li class="media row">
-						<div class="col-xs-16">
-							<form role="form">
-								<div class="form-group">
-									<div class="btn btn-primary btn-lg btn-block">Записаться на прием</div>
-								</div>
-								<div class="form-group">
-									<div class="btn btn-success btn-lg btn-block animated">Позвонить</div>
-								</div>
-							</form>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<script src="js/jq.js" type="text/javascript"></script>
-	<script src="js/main.js" type="text/javascript"></script>
-</body>
+  <head>
+    <title>Doctu.ru - Поиск</title><meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon">
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="ico-menu" href="./1.html"><i class="doc-ico back-ico"></i></a>
+          <div class="navbar-brand doc-title">
+            Клиническая больниц...
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="left-menu">
+      <ul>
+        <li>
+          <a href="1.html"><i class="doc-ico ico-search1"></i><span class="sm-hidden">Поиск</span></a>
+        </li>
+        <li>
+          <a href="2.html"><i class="doc-ico ico-doctor"></i><span class="sm-hidden">Врачи</span></a>
+        </li>
+        <li>
+          <a href="3.html"><i class="doc-ico ico-clinic1"></i><span class="sm-hidden">Клиники</span></a>
+        </li>
+        <li>
+          <a href="4.html"><i class="doc-ico ico-call"></i><span class="sm-hidden">Позвоните мне</span><span class="doc-ico ico-arrow-right"></span></a>
+        </li>
+        <li>
+          <a href="5.html"><i class="doc-ico ico-filter"></i><span class="sm-hidden">Подбор врача</span><span class="doc-ico ico-arrow-right"></span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="container container-main">
+      <div class="row">
+        <div class="btn-group btn-centr three-btn">
+          <button class="btn btn-default search-doctor active" type="button"> Анкета</button><button class="btn btn-default search-clinic" type="button"> Инфо</button><button class="btn btn-default search-clinic" type="button"> Отзывы</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-16">
+          <ul class="media-list doc-list">
+            <li class="media row">
+              <div class="media-body col-xs-11">
+                <a href="/doc.html">
+                  <h4 class="media-heading">
+                    Клиническая больница №133 им. Л.Г.Соколова
+                  </h4>
+                </a>
+              </div>
+              <div class="col-xs-5 text-right">
+                <h3 class="ranking">
+                  5,0
+                </h3>
+                <span class="ranking-stars"><i></i><i></i><i></i><i></i><i></i></span>
+              </div>
+            </li>
+            <li class="hr"></li>
+            <li class="media row">
+              <div class="media-body col-xs-16 posrel">
+                <h2>
+                  <i class="doc-ico ico-clinic"></i>Адрес
+                </h2>
+                <p class="adress">
+                  <i class="doc-ico ico-metro"></i>Удельная, Пионерская
+                </p>
+                <p class="adress">
+                  <i class="doc-ico ico-addr"></i>Константинопольский переулок, 7
+                </p>
+                <a class="arrow-to" href="/1.html"><i class="doc-ico ico-arrow-right"></i></a>
+              </div>
+            </li>
+            <li class="hr"></li>
+            <li class="media row">
+              <div class="media-body col-xs-16 posrel">
+                <h2>
+                  <i class="doc-ico ico-calendar"></i>График работы
+                </h2>
+              </div>
+              <div class="col-xs-16">
+                <dl class="dl-horizontal">
+                  <dt>
+                    Будни:
+                  </dt>
+                  <dd>
+                    09:00 - 21:00
+                  </dd>
+                  <dt>
+                    Сб:
+                  </dt>
+                  <dd>
+                    10:00 - 18:00
+                  </dd>
+                  <dt>
+                    Вс:
+                  </dt>
+                  <dd>
+                    11:00 - 16:00
+                  </dd>
+                </dl>
+              </div>
+            </li>
+            <li class="hr"></li>
+            <li class="media row">
+              <div class="col-xs-16">
+                <form role="form">
+                  <div class="form-group">
+                    <div class="btn btn-primary btn-lg btn-block">
+                      Записаться на прием
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="btn btn-success btn-lg btn-block animated">
+                      Позвонить
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/jq.js" type="text/javascript"></script>
+  <script src="./js/jquery.mobile.custom.min.js" type="text/javascript"></script>
+  <script src="./js/slick.min.js" type="text/javascript"></script>
+  <script src="./js/main.js" type="text/javascript"></script>
 </html>
