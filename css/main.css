@@ -2145,14 +2145,14 @@ input[type="button"].btn-block {
 }
 
 .ico-menu i {
-  background-position: left -1px;
+  background-position: -4px -6px;
 }
 
 .ico-settings {
   float: right;
 }
 .ico-settings i {
-  background-position: -21px -1px;
+  background-position: -23px -4px;
   height: 16px;
   width: 16px;
   margin-top: 1px;
@@ -2188,15 +2188,16 @@ input[type="button"].btn-block {
 }
 
 .ico-circl.ico-desktop i {
-  background-position: -49px -25px;
+  background-position: -51px -24px;
 }
 
 .ico-circl.ico-call i {
-  background-position: -25px -25px;
+  background-position: -23px -24px;
 }
 
 .doc-ico {
-  background-image: url(../img/icos_sm.png);
+  background-image: url(../img/icos_big.png);
+  background-size: 200px 105px;
   background-repeat: no-repeat;
   display: inline-block;
   width: 18px;
@@ -2210,57 +2211,57 @@ input[type="button"].btn-block {
   margin-right: 5px;
 }
 .doc-ico.ico-about {
-  background-position: -63px 0px;
+  background-position: -64px -3px;
   height: 20px;
   top: 5px;
   position: relative;
   margin-right: 5px;
 }
 .doc-ico.ico-about-clinic {
-  background-position: -155px -23px;
+  background-position: -154px -21px;
   height: 20px;
   top: 5px;
   position: relative;
   margin-right: 5px;
 }
 .doc-ico.ico-education {
-  background-position: -84px 0px;
+  background-position: -86px -3px;
   height: 20px;
   top: 5px;
   position: relative;
   margin-right: 5px;
 }
 .doc-ico.ico-sert {
-  background-position: -109px 0px;
+  background-position: -109px -3px;
   height: 20px;
   top: 5px;
   position: relative;
   margin-right: 5px;
 }
 .doc-ico.ico-gal {
-  background-position: -155px 0px;
+  background-position: -157px -3px;
   height: 20px;
   top: 5px;
   position: relative;
   margin-right: 5px;
 }
 .doc-ico.ico-spec {
-  background-position: -177px 0px;
+  background-position: -178px -4px;
   height: 20px;
   top: 5px;
   position: relative;
   margin-right: 5px;
 }
 .doc-ico.ico-addr {
-  background-position: -42px 0;
+  background-position: -43px -4px;
   width: 14px;
   position: absolute;
   top: 0px;
   left: 0;
 }
 .doc-ico.ico-metro {
-  background-position: -115px -23px;
-  width: 14px;
+  background-position: -117px -23px;
+  width: 15px;
   position: absolute;
   top: 0px;
   left: 0;
@@ -2270,7 +2271,7 @@ input[type="button"].btn-block {
   width: 14px;
 }
 .doc-ico.ico-calendar {
-  background-position: -130px 5px;
+  background-position: -131px 1px;
   width: 21px;
   height: 21px;
 }
@@ -2299,7 +2300,7 @@ input[type="button"].btn-block {
   margin-right: 10px;
 }
 .doc-ico.ico-call {
-  background-position: -82px -43px;
+  background-position: -82px -42px;
   width: 21px;
   height: 22px;
   top: 6px;
@@ -2307,7 +2308,7 @@ input[type="button"].btn-block {
   margin-right: 10px;
 }
 .doc-ico.ico-filter {
-  background-position: -61px -43px;
+  background-position: -61px -42px;
   width: 21px;
   height: 21px;
   top: 6px;
@@ -2850,15 +2851,16 @@ html, body {
   display: inline-block;
   width: 23px;
   height: 22px;
-  background-image: url(../img/icos_sm.png);
+  background-image: url(../img/icos_big.png);
+  background-size: 200px 105px;
   background-repeat: no-repeat;
-  background-position: -140px -41px;
+  background-position: -142px -43px;
 }
 .top-menu label.radio input {
   display: none;
 }
 .top-menu label.radio input:checked + .rad-cus {
-  background-position: -117px -41px;
+  background-position: -117px -43px;
 }
 .top-menu label.radio .ttl2 {
   font-size: 11px;
