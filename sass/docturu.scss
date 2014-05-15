@@ -2,6 +2,7 @@ $screen-sm-min: 480px;
 
 html, body {
 	height: 100%;
+	min-width: 320px;
 }
 .container-main {
 	padding: 20px 15px;
@@ -204,6 +205,11 @@ html, body {
 		float: right;
 		&.clear-both {
 			clear: both;
+		}
+	}
+	.col-xs-16 {
+		.adress {
+			width: 77%;
 		}
 	}
 	.doc-reviews {
@@ -547,6 +553,14 @@ html, body {
 	}
 	.ico-arrow-right1 {
 		display: none;
+	}
+	.doc-list {
+		.col-xs-16 {
+			.adress {
+				width: 100%;
+				margin-right: -66px;
+			}
+		}
 	}
 
 	#Yamap {

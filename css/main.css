@@ -1594,14 +1594,6 @@ input[type="button"].btn-block {
   margin-top: 4.5px;
   margin-bottom: 4.5px;
 }
-.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
-  margin-top: 7px;
-  margin-bottom: 7px;
-}
-.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 
 .navbar-text {
   margin-top: 11.5px;
@@ -2350,6 +2342,7 @@ input[type="button"].btn-block {
 
 html, body {
   height: 100%;
+  min-width: 320px;
 }
 
 .container-main {
@@ -2616,6 +2609,9 @@ html, body {
 }
 .doc-list .lbl.clear-both {
   clear: both;
+}
+.doc-list .col-xs-16 .adress {
+  width: 77%;
 }
 .doc-list .doc-reviews {
   font-size: 11px;
@@ -2976,6 +2972,11 @@ html, body {
 
   .ico-arrow-right1 {
     display: none;
+  }
+
+  .doc-list .col-xs-16 .adress {
+    width: 100%;
+    margin-right: -66px;
   }
 
   #Yamap {

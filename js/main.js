@@ -12,7 +12,7 @@ $(function() {
 	});
 
 
-	$('.ico-menu').click(function(){
+	$('#show_menu').click(function(){
 		if (document.body.clientWidth < max_portrait_width) {
 			left_menu.toggleClass('active');
 			return false;
@@ -40,14 +40,19 @@ $(function() {
 	});
 
 	$('.ico-settings').click(function(){
-		var type = $(this).attr('data-type'),
-			top_menu = $('.top-menu.'+type).addClass('active'),
-			nav_height = $('.navbar').outerHeight();
+		var type = $(this).attr('data-type');
 
-		if (document.body.clientWidth < max_portrait_width) {
-				top_menu.css({top:0});
+		if (type) {
+			var top_menu = $('.top-menu.'+type).addClass('active'),
+				nav_height = $('.navbar').outerHeight();
+
+			if (document.body.clientWidth < max_portrait_width) {
+					top_menu.css({top:0});
+			} else {
+				top_menu.css({top:-nav_height});
+			}
 		} else {
-			top_menu.css({top:-nav_height});
+			console.log('Не понятно какое меню открывать, для клиниики или для доктора?')
 		}
 		return false;
 	});
