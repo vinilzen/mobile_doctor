@@ -23,6 +23,8 @@ html, body {
 	&.doc-title {
 		white-space: nowrap;
 		width: 83%;
+		text-overflow: ellipsis;
+		overflow: hidden;
 		text-align: center;
 		padding-left: 0;
 	}
@@ -153,10 +155,14 @@ html, body {
 		font-size: 11px;
 		line-height: 1.2;
 		display: inline-block;
+		overflow: hidden;
+		text-overflow:ellipsis;
 		float: left;
 		clear: both;
 		margin-bottom: 5px;
 		padding-right: 4px;
+		width: 100%;
+		white-space: nowrap;
 	}
 	.adress {
 		padding-top: 3px;
@@ -169,6 +175,10 @@ html, body {
 		padding-left: 18px;
 		float: left;
 		clear: both;
+		width: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow:ellipsis;
 	}
 	.ranking {
 		font-size: 13px;
@@ -365,7 +375,8 @@ html, body {
 		font-weight: normal;
 	}
 	.col-xs-16 {
-		margin-top: -8px;
+		top: -8px;
+		position: relative;
 	}
 	li.row {
 	}
@@ -494,10 +505,12 @@ html, body {
 		padding-left: 17px;
 		text-decoration: none;
 		white-space: nowrap;
+		position: relative;
+		overflow: hidden;
 		.ico-arrow-right1 {
-			float: right;
-			margin-top: 8px;
-			margin-right: 10px;
+			position: absolute;
+			top: 16px;
+			right: 10px;
 			width: 16px;
 		}
 	}
