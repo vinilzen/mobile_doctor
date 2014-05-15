@@ -4,16 +4,19 @@
 	font-size: $font-size-large;
 	line-height: $line-height-computed;
 	height: $navbar-height;
+	// position: absolute;
+	text-align: center;
+	width: 13%;
 	i {
 		width: 14px;
 		height: 14px;
-		display: block;
+		display: inline-block;
 		margin-top: 2px;
 	}
 }
 .ico-menu {
 	i {
-		background-position:  -4px -6px;
+		background-position:  -4px -5px;
 	}
 }
 .ico-settings {
@@ -23,7 +26,6 @@
 		width: 16px;
 		margin-top: 1px;
 	}
-	float: right;
 }
 
 .ico-menu i.back-ico {

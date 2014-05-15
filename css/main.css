@@ -2136,21 +2136,20 @@ input[type="button"].btn-block {
   font-size: 18px;
   line-height: 19px;
   height: 42px;
+  text-align: center;
+  width: 13%;
 }
 .ico-menu i, .ico-settings i {
   width: 14px;
   height: 14px;
-  display: block;
+  display: inline-block;
   margin-top: 2px;
 }
 
 .ico-menu i {
-  background-position: -4px -6px;
+  background-position: -4px -5px;
 }
 
-.ico-settings {
-  float: right;
-}
 .ico-settings i {
   background-position: -23px -4px;
   height: 16px;
@@ -2363,7 +2362,7 @@ html, body {
 .navbar-brand {
   font-weight: 600;
   text-align: center;
-  width: calc(100% - 92px);
+  width: 74%;
 }
 .navbar-brand.doc-title {
   white-space: nowrap;
