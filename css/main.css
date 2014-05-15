@@ -2350,19 +2350,19 @@ html, body {
   min-width: 320px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 319px) {
   .navbar {
     position: absolute;
   }
 }
 .container-main {
   padding: 20px 15px;
-  height: 100%;
+  padding-bottom: 0px;
   min-height: 438px;
   position: relative;
 }
 .container-main.top-menu {
-  position: absolute;
+  position: fixed;
   left: 0;
   width: 100%;
   background-color: #282c35;
@@ -2797,21 +2797,18 @@ html, body {
 .top-menu.active {
   top: 0;
   display: block;
+  position: absolute;
 }
 .top-menu label {
   color: #fff;
   font-size: 15px;
   font-weight: normal;
 }
-.top-menu .col-xs-16 {
-  top: -8px;
-  position: relative;
-}
 .top-menu .hr {
   border-bottom: 1px solid #1a1d23;
   margin: 0 -15px;
   padding: 0;
-  height: 7px;
+  height: 1px;
 }
 .top-menu input[type="checkbox"] {
   display: none;
@@ -2880,9 +2877,6 @@ html, body {
   display: inline-block;
   white-space: nowrap;
 }
-.top-menu .col-xs-8 {
-  margin-top: -5px;
-}
 .top-menu .btn-primary {
   padding: 0.5em 0;
   font-size: 16px;
@@ -2901,6 +2895,21 @@ html, body {
   margin-top: 0;
   margin-right: 5%;
   float: right;
+}
+.top-menu .row-select {
+  margin-top: 3px;
+  height: 80px;
+  display: block;
+}
+.top-menu .row-btn {
+  margin-top: 11px;
+  height: 40px;
+  display: block;
+}
+.top-menu .row-sumbit {
+  margin-top: 11px;
+  height: 40px;
+  display: block;
 }
 
 /* LEFT MENU */
@@ -2978,6 +2987,9 @@ html, body {
     left: 0;
     width: 54px;
   }
+  .left-menu .sm-hidden {
+    display: none;
+  }
 
   .container-main {
     margin-left: 54px;
@@ -2992,17 +3004,13 @@ html, body {
     display: block;
   }
 
-  .sm-hidden {
-    display: none;
-  }
-
   .ico-arrow-right1 {
     display: none;
   }
 
   .doc-list .col-xs-16 .adress {
     width: 100%;
-    margin-right: -66px;
+    margin-right: -70px;
   }
 
   #Yamap {
