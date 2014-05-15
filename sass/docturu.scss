@@ -4,6 +4,14 @@ html, body {
 	height: 100%;
 	min-width: 320px;
 }
+.navbar {
+	min-width: 320px;
+}
+@media (max-width: 320px) {
+	.navbar {
+		position: absolute;
+	}
+}
 .container-main {
 	padding: 20px 15px;
 	height: 100%;
@@ -256,12 +264,14 @@ html, body {
 	i {
 		width: 12px;
 		height: 12px;
+		margin-right: 1px;
 		display: inline-block;
-		background-image: url(../img/star.gif);
+		background-image: url(../img/gold_star.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: top left;
 		&.blank {
+			background-image: url(../img/star.gif);
 			background-position: bottom left;
 		}
 	}
@@ -492,6 +502,8 @@ html, body {
 	ul {
 		margin: 0;
 		padding: 0;
+		position: relative;
+		height: 100%;
 	}
 	li {
 		display: block;
@@ -501,6 +513,10 @@ html, body {
 		&:hover,
 		&.active {
 			background-color: #22262e;
+		}
+		&.tobottom {
+			position: absolute;
+			bottom: 0;
 		}
 	}
 	a {
@@ -519,6 +535,15 @@ html, body {
 			top: 16px;
 			right: 10px;
 			width: 16px;
+		}
+		&.text-right {
+			.right {
+				padding-right: 25px;
+			}
+			.ico-arrow-right1 {
+				background-position: -100px -65px;
+				left: 16px;
+			}
 		}
 	}
 }

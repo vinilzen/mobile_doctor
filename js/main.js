@@ -93,13 +93,21 @@ $(function() {
 		$('.top-menu.menu-doc').css({top: -h2}).removeClass('active');
 	}, false);
 
-	$(document).on('click', function(event) {
-		if (left_menu.hasClass('active')) {
-			if ($(event.target).closest(".left-menu").length === 0) {
-				if (document.body.clientWidth<max_portrait_width) {
-					left_menu.removeClass('active');
-				}
-			}
+
+	$('#close-left-menu').click(function(){
+		if (document.body.clientWidth<max_portrait_width) {
+			left_menu.removeClass('active');
 		}
 	});
+
+	// убираем меню по клику за его передлами
+	// $(document).on('click', function(event) {
+	// 	if (left_menu.hasClass('active')) {
+	// 		if ($(event.target).closest(".left-menu").length === 0) {
+	// 			if (document.body.clientWidth<max_portrait_width) {
+	// 				left_menu.removeClass('active');
+	// 			}
+	// 		}
+	// 	}
+	// });
 });
