@@ -2408,10 +2408,10 @@ html, body {
   color: #fff;
 }
 .btn-centr.btn-group.three-btn .btn-default {
-  width: 34%;
-}
-.btn-centr.btn-group.three-btn .btn-default:first-child, .btn-centr.btn-group.three-btn .btn-default:last-child {
   width: 33%;
+}
+.btn-centr.btn-group.three-btn .btn-default:last-child {
+  width: 34%;
 }
 
 @keyframes progress-bar-stripes {
@@ -2566,12 +2566,12 @@ html, body {
   display: inline-block;
   float: left;
   clear: both;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   padding-right: 4px;
 }
 .doc-list .adress {
   padding-top: 3px;
-  margin-top: 0px;
+  margin-top: 1px;
   margin-bottom: 4px;
   font-size: 11px;
   line-height: 1.2;
@@ -2597,8 +2597,8 @@ html, body {
   color: #fff;
   background-color: #0ea646;
   border-radius: 4px;
-  padding: 3px 8px;
-  font-size: 13px;
+  padding: 2px 6px;
+  font-size: 11px;
   white-space: nowrap;
   margin-top: 0px;
   display: inline-block;
@@ -2960,8 +2960,7 @@ html, body {
   }
 
   #Yamap {
-    margin-left: 54px;
-    width: calc(100% - 54px);
+    padding-left: 54px;
     overflow: hidden;
   }
 }
