@@ -1,5 +1,10 @@
 $(function() {
 
+	function isIE () {
+		var myNav = navigator.userAgent.toLowerCase();
+		return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+	}
+
 	var max_portrait_width = 480,
 		left_menu = $('.left-menu');
 
@@ -39,6 +44,8 @@ $(function() {
 		return false;
 	});
 
+
+
 	$('.ico-settings').click(function(){
 		var type = $(this).attr('data-type');
 
@@ -49,14 +56,21 @@ $(function() {
 			if (document.body.clientWidth < max_portrait_width) {
 					top_menu.css({top:0});
 			} else {
-				top_menu.css({top:-nav_height});
+				if ( isIE() == 9) {
+					top_menu.css({
+						top:0,
+						height:'100%',
+						width:'100%'
+					});
+				} else {
+					top_menu.css({top:-nav_height});
+				}
 			}
 		} else {
-			console.log('Не понятно какое меню открывать, для клиниики или для доктора?')
+			console.log('Не понятно какое меню открывать, для клиниики или для доктора?');
 		}
 		return false;
 	});
-
 
 
 	// Галерея для картинок в инфо клиниики
@@ -99,15 +113,41 @@ $(function() {
 			left_menu.removeClass('active');
 		}
 	});
-
+/*
 	// убираем меню по клику за его передлами
-	// $(document).on('click', function(event) {
-	// 	if (left_menu.hasClass('active')) {
-	// 		if ($(event.target).closest(".left-menu").length === 0) {
-	// 			if (document.body.clientWidth<max_portrait_width) {
-	// 				left_menu.removeClass('active');
-	// 			}
-	// 		}
-	// 	}
-	// });
+	$(document).on('click', function(event) {
+		if (left_menu.hasClass('active')) {
+			if ($(event.target).closest(".left-menu").length === 0) {
+				if (document.body.clientWidth<max_portrait_width) {
+					left_menu.removeClass('active');
+				}
+			}
+		}
+	});
+*/
+
+	if ( isIE() == 9) {
+		
+		$('#main').css({ height: $( window ).height() - 43 });
+
+
+		if ($( window ).width() > max_portrait_width ){
+			$('#main').css({ width: $( window ).width() - 54 });
+		}
+
+
+		$('.ico-map.doc-ico').css({ top: $( window ).height() - 51 });
+
+		$( window ).resize(function() {
+			$('#main').css({ height: $( window ).height() - 43 });
+
+			if ($( window ).width() > max_portrait_width )
+				$('#main').css({ width: $( window ).width() - 54 });
+			else
+				$('#main').css({ width: '100%' });
+			
+			$('.ico-map.doc-ico').css({ top: $( window ).height() - 48 })
+
+		});
+	} 
 });
