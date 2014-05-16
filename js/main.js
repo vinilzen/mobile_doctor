@@ -130,6 +130,11 @@ $(function() {
 		
 		$('#main').css({ height: $( window ).height() - 43 });
 
+		if ( $( window ).width() < max_portrait_width )
+			$('.left-menu').css({ height: $( window ).height() });
+		else 
+			$('.left-menu').css({ height: $( window ).height() -43 });
+
 
 		if ($( window ).width() > max_portrait_width - 23 ){
 			$('#main').css({ width: $( window ).width() - 54 });
@@ -148,6 +153,13 @@ $(function() {
 			
 			$('.ico-map.doc-ico').css({ top: $( window ).height() - 48 })
 
+			if ( $( window ).width() < max_portrait_width )
+				$('.left-menu').css({ height: $( window ).height() });
+			else 
+				$('.left-menu').css({ height: $( window ).height() -43 });
 		});
+
+
+		$('input, textarea').placeholder();
 	} 
 });

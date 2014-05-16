@@ -11,165 +11,166 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <div class="ico-menu" id="show_menu">
-            <i class="doc-ico"></i>
-          </div>
-          <div class="navbar-brand">
-            Подбор врача
-          </div>
-          <div class="ico-settings" data-type="menu-doc">
-            <i class="doc-ico"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="left-menu">
-      <ul>
-        <li>
-          <a href="1.html"><i class="doc-ico ico-search1"></i><span class="sm-hidden">Поиск</span></a>
-        </li>
-        <li>
-          <a href="2.html"><i class="doc-ico ico-doctor"></i><span class="sm-hidden">Врачи</span></a>
-        </li>
-        <li>
-          <a href="3.html"><i class="doc-ico ico-clinic1"></i><span class="sm-hidden">Клиники</span></a>
-        </li>
-        <li>
-          <a href="13.html"><i class="doc-ico ico-call"></i><span class="sm-hidden">Позвоните мне</span><span class="doc-ico ico-arrow-right1"></span></a>
-        </li>
-        <li>
-          <a href="12.html"><i class="doc-ico ico-filter"></i><span class="sm-hidden">Подбор врача</span><span class="doc-ico ico-arrow-right1"></span></a>
-        </li>
-        <li class="sm-hidden tobottom active">
-          <a class="text-right" href="#" id="close-left-menu"><span class="doc-ico ico-arrow-right1"></span><span class="right">Свернуть</span></a>
-        </li>
-      </ul>
-    </div>
-    <div class="top-menu container container-main menu-doc">
-      <div class="row">
-        <div class="btn-group btn-centr three-btn btn-group-invers">
-          <button class="btn btn-default search-doctor" type="button">По рейтингу</button><button class="btn btn-default search-clinic active" type="button">По стоимости</button><button class="btn btn-default search-clinic" type="button">По стажу</button>
-        </div>
-      </div>
-      <ul class="row">
-        <li class="row row-btn">
-          <label class="col-xs-16"><span class="ttl">Только с отзывами</span><input type="checkbox"><span class="check-custom"><em></em></span></label>
-        </li>
-        <li class="hr"></li>
-        <li class="row row-btn">
-          <label class="col-xs-16"><span class="ttl">Запись по телефону</span><input type="checkbox"><span class="check-custom"><em></em></span></label>
-        </li>
-        <li class="hr"></li>
-        <li class="row row-btn">
-          <label class="col-xs-16"><span class="ttl">Вызов на дом</span><input type="checkbox"><span class="check-custom"><em></em></span></label>
-        </li>
-        <li class="hr"></li>
-        <li class="row row-select">
-          <div class="col-xs-16">
-            <span class="ttl">Категория</span>
-            <div class="clearfix"></div>
-            <div class="row text-center">
-              <label class="radio"><input name="cat" type="radio"><span class="rad-cus"></span><span class="ttl2">Взрослая </span></label><label class="radio"><input name="cat" type="radio"><span class="rad-cus"></span><span class="ttl2">Детская </span></label><label class="radio"><input checked="checked" name="cat" type="radio"><span class="rad-cus"></span><span class="ttl2">Не важно</span></label>
-            </div>
-          </div>
-        </li>
-        <li class="hr"></li>
-        <li class="row row-select">
-          <div class="col-xs-16">
-            <span class="ttl">Пол врача</span>
-            <div class="clearfix"></div>
-            <div class="row text-center">
-              <label class="radio"><input name="sex" type="radio"><span class="rad-cus"></span><span class="ttl2">Мужской </span></label><label class="radio"><input name="sex" type="radio"><span class="rad-cus"></span><span class="ttl2">Женский </span></label><label class="radio"><input checked="checked" name="sex" type="radio"><span class="rad-cus"></span><span class="ttl2">Не важно</span></label>
-            </div>
-          </div>
-        </li>
-        <li class="hr"></li>
-        <li class="row row-sumbit">
-          <div class="col-xs-8">
-            <div class="btn btn-lg btn-primary btn-block">
-              Показать
-            </div>
-          </div>
-          <div class="col-xs-8">
-            <div class="btn btn-lg btn-warning btn-block cancel-set" data-type="menu-doc">
-              Отменить
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="top-menu container container-main menu-clinic">
-      <div class="row">
-        <div class="btn-group btn-centr btn-group-invers">
-          <button class="btn btn-default search-doctor active" type="button">По рейтингу</button><button class="btn btn-default search-clinic" type="button">По алфавиту</button>
-        </div>
-      </div>
-      <ul class="row">
-        <li class="row row-btn">
-          <label class="col-xs-16"><span class="ttl">Только с отзывами</span><input type="checkbox"><span class="check-custom"><em></em></span></label>
-        </li>
-        <li class="hr"></li>
-        <li class="row row-btn">
-          <label class="col-xs-16"><span class="ttl">Запись по телефону</span><input type="checkbox"><span class="check-custom"><em></em></span></label>
-        </li>
-        <li class="hr"></li>
-        <li class="row row-select">
-          <div class="col-xs-16">
-            <span class="ttl">Категория</span>
-            <div class="clearfix"></div>
-            <div class="row text-center">
-              <label class="radio"><input name="cat" type="radio"><span class="rad-cus"></span><span class="ttl2">Взрослая </span></label><label class="radio"><input name="cat" type="radio"><span class="rad-cus"></span><span class="ttl2">Детская </span></label><label class="radio"><input checked="checked" name="cat" type="radio"><span class="rad-cus"></span><span class="ttl2">Не важно</span></label>
-            </div>
-          </div>
-        </li>
-        <li class="hr"></li>
-        <li class="row row-sumbit">
-          <div class="col-xs-8">
-            <div class="btn btn-lg btn-primary btn-block">
-              Показать
-            </div>
-          </div>
-          <div class="col-xs-8">
-            <div class="btn btn-lg btn-warning btn-block cancel-set" data-type="menu-clinic">
-              Отменить
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="container container-main" id="main">
-      <div class="row">
-        <div class="col-xs-16">
-          <p class="text-center text-info">
-            Для подтверждения записи пожалуйста заполните поля ниже
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-16">
-          <form class="search-form" role="form">
-            <div class="form-group">
-              <input class="form-control input-lg" placeholder="Ваше ФИО" type="text">
-            </div>
-            <div class="form-group">
-              <input class="form-control input-lg" placeholder="Телефон" type="text">
-            </div>
-            <div class="form-group">
-              <div class="btn btn-primary btn-lg btn-block">
-                Отправить
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </body>
-  <script src="./js/jq.js" type="text/javascript"></script>
-  <script src="./js/jquery.mobile.custom.min.js" type="text/javascript"></script>
-  <script src="./js/slick.min.js" type="text/javascript"></script>
-  <script src="./js/main.js" type="text/javascript"></script>
 </html>
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <div class="ico-menu" id="show_menu">
+          <i class="doc-ico"></i>
+        </div>
+        <div class="navbar-brand">
+          Подбор врача
+        </div>
+        <div class="ico-settings" data-type="menu-doc">
+          <i class="doc-ico"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="left-menu">
+    <ul>
+      <li>
+        <a href="1.html"><i class="doc-ico ico-search1"></i><span class="sm-hidden">Поиск</span></a>
+      </li>
+      <li>
+        <a href="2.html"><i class="doc-ico ico-doctor"></i><span class="sm-hidden">Врачи</span></a>
+      </li>
+      <li>
+        <a href="3.html"><i class="doc-ico ico-clinic1"></i><span class="sm-hidden">Клиники</span></a>
+      </li>
+      <li>
+        <a href="13.html"><i class="doc-ico ico-call"></i><span class="sm-hidden">Позвоните мне</span><span class="doc-ico ico-arrow-right1"></span></a>
+      </li>
+      <li>
+        <a href="12.html"><i class="doc-ico ico-filter"></i><span class="sm-hidden">Подбор врача</span><span class="doc-ico ico-arrow-right1"></span></a>
+      </li>
+      <li class="sm-hidden tobottom active">
+        <a class="text-right" href="#" id="close-left-menu"><span class="doc-ico ico-arrow-right1"></span><span class="right">Свернуть</span></a>
+      </li>
+    </ul>
+  </div>
+  <div class="top-menu container container-main menu-doc">
+    <div class="row">
+      <div class="btn-group btn-centr three-btn btn-group-invers">
+        <button class="btn btn-default search-doctor" type="button">По рейтингу</button><button class="btn btn-default search-clinic active" type="button">По стоимости</button><button class="btn btn-default search-clinic" type="button">По стажу</button>
+      </div>
+    </div>
+    <ul class="row">
+      <li class="row row-btn">
+        <label class="col-xs-16"><span class="ttl">Только с отзывами</span><input type="checkbox"><span class="check-custom"><em></em></span></label>
+      </li>
+      <li class="hr"></li>
+      <li class="row row-btn">
+        <label class="col-xs-16"><span class="ttl">Запись по телефону</span><input type="checkbox"><span class="check-custom"><em></em></span></label>
+      </li>
+      <li class="hr"></li>
+      <li class="row row-btn">
+        <label class="col-xs-16"><span class="ttl">Вызов на дом</span><input type="checkbox"><span class="check-custom"><em></em></span></label>
+      </li>
+      <li class="hr"></li>
+      <li class="row row-select">
+        <div class="col-xs-16">
+          <span class="ttl">Категория</span>
+          <div class="clearfix"></div>
+          <div class="row text-center">
+            <label class="radio"><input name="cat" type="radio"><span class="rad-cus"></span><span class="ttl2">Взрослая </span></label><label class="radio"><input name="cat" type="radio"><span class="rad-cus"></span><span class="ttl2">Детская </span></label><label class="radio"><input checked="checked" name="cat" type="radio"><span class="rad-cus"></span><span class="ttl2">Не важно</span></label>
+          </div>
+        </div>
+      </li>
+      <li class="hr"></li>
+      <li class="row row-select">
+        <div class="col-xs-16">
+          <span class="ttl">Пол врача</span>
+          <div class="clearfix"></div>
+          <div class="row text-center">
+            <label class="radio"><input name="sex" type="radio"><span class="rad-cus"></span><span class="ttl2">Мужской </span></label><label class="radio"><input name="sex" type="radio"><span class="rad-cus"></span><span class="ttl2">Женский </span></label><label class="radio"><input checked="checked" name="sex" type="radio"><span class="rad-cus"></span><span class="ttl2">Не важно</span></label>
+          </div>
+        </div>
+      </li>
+      <li class="hr"></li>
+      <li class="row row-sumbit">
+        <div class="col-xs-8">
+          <div class="btn btn-lg btn-primary btn-block">
+            Показать
+          </div>
+        </div>
+        <div class="col-xs-8">
+          <div class="btn btn-lg btn-warning btn-block cancel-set" data-type="menu-doc">
+            Отменить
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="top-menu container container-main menu-clinic">
+    <div class="row">
+      <div class="btn-group btn-centr btn-group-invers">
+        <button class="btn btn-default search-doctor active" type="button">По рейтингу</button><button class="btn btn-default search-clinic" type="button">По алфавиту</button>
+      </div>
+    </div>
+    <ul class="row">
+      <li class="row row-btn">
+        <label class="col-xs-16"><span class="ttl">Только с отзывами</span><input type="checkbox"><span class="check-custom"><em></em></span></label>
+      </li>
+      <li class="hr"></li>
+      <li class="row row-btn">
+        <label class="col-xs-16"><span class="ttl">Запись по телефону</span><input type="checkbox"><span class="check-custom"><em></em></span></label>
+      </li>
+      <li class="hr"></li>
+      <li class="row row-select">
+        <div class="col-xs-16">
+          <span class="ttl">Категория</span>
+          <div class="clearfix"></div>
+          <div class="row text-center">
+            <label class="radio"><input name="cat" type="radio"><span class="rad-cus"></span><span class="ttl2">Взрослая </span></label><label class="radio"><input name="cat" type="radio"><span class="rad-cus"></span><span class="ttl2">Детская </span></label><label class="radio"><input checked="checked" name="cat" type="radio"><span class="rad-cus"></span><span class="ttl2">Не важно</span></label>
+          </div>
+        </div>
+      </li>
+      <li class="hr"></li>
+      <li class="row row-sumbit">
+        <div class="col-xs-8">
+          <div class="btn btn-lg btn-primary btn-block">
+            Показать
+          </div>
+        </div>
+        <div class="col-xs-8">
+          <div class="btn btn-lg btn-warning btn-block cancel-set" data-type="menu-clinic">
+            Отменить
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="container container-main" id="main">
+    <div class="row">
+      <div class="col-xs-16">
+        <p class="text-center text-info">
+          Для подтверждения записи пожалуйста заполните поля ниже
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-16">
+        <form class="search-form" role="form">
+          <div class="form-group">
+            <input class="form-control input-lg" placeholder="Ваше ФИО" type="text">
+          </div>
+          <div class="form-group">
+            <input class="form-control input-lg" placeholder="Телефон" type="text">
+          </div>
+          <div class="form-group">
+            <div class="btn btn-primary btn-lg btn-block">
+              Отправить
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/jq.js" type="text/javascript"></script>
+<script src="./js/jquery.mobile.custom.min.js" type="text/javascript"></script>
+<script src="./js/slick.min.js" type="text/javascript"></script>
+<script src="./js/jquery.placeholder.js" type="text/javascript"></script>
+<script src="./js/main.js" type="text/javascript"></script>
