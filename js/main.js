@@ -131,7 +131,7 @@ $(function() {
 		$('#main').css({ height: $( window ).height() - 43 });
 
 
-		if ($( window ).width() > max_portrait_width ){
+		if ($( window ).width() > max_portrait_width - 23 ){
 			$('#main').css({ width: $( window ).width() - 54 });
 		}
 
@@ -141,7 +141,7 @@ $(function() {
 		$( window ).resize(function() {
 			$('#main').css({ height: $( window ).height() - 43 });
 
-			if ($( window ).width() > max_portrait_width )
+			if ($( window ).width() > max_portrait_width - 23 )
 				$('#main').css({ width: $( window ).width() - 54 });
 			else
 				$('#main').css({ width: '100%' });
